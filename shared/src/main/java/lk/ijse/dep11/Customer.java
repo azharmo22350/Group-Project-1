@@ -14,6 +14,7 @@ public class Customer implements Serializable {
     private String CustomerId;
     private String CustomerName;
     private String ContactNumber;
+    private boolean OrderStatus;
 
     ArrayList<Item> ItemList ;
 
@@ -21,9 +22,22 @@ public class Customer implements Serializable {
 
 
 class Item implements Serializable{
-
     private String ItemName;
     private int ItemQuntity;
 
+    public String getItemName() {
+        return ItemName;
+    }
 
+    public void setItemName(String itemName) {
+        ItemName = itemName;
+    }
+
+    public int getItemQuntity() {
+        return ItemQuntity;
+    }
+
+    public void setItemQuntity(int itemQuntity) {
+        ItemQuntity = itemQuntity;
+    }
 }
